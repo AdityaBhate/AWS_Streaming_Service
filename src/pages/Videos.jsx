@@ -38,6 +38,7 @@ function Videos() {
 			const res = await axios.delete(
 				`https://aws-stream.onrender.com/delete/${video}`
 			);
+			console.log(res);
 			toast.success("Video Deleted");
 			setVideos((prevVideos) => prevVideos.filter((v) => v !== video));
 		} catch (error) {

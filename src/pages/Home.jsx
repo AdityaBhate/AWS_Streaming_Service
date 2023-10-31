@@ -18,11 +18,9 @@ function Home() {
 						This project was created by Group 20, a team of talented students:
 					</p>
 					<ul className='text-sm text-gray-600'>
-						<li>Student 1</li>
-						<li>Student 2</li>
-						<li>Student 3</li>
-						<li>Student 4</li>
-						{/* Add more students as needed */}
+						<li>sarvesh Shelke</li>
+						<li>Nikhil Singh</li>
+						<li>Sahil More</li>
 					</ul>
 				</div>
 			</div>
