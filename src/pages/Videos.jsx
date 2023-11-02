@@ -51,7 +51,8 @@ function Videos() {
 	async function handleCopy(video) {
 		setDeleteLoading(true);
 		try {
-			const videoURL = `${window.location.origin}/watch/${video}/`;
+			const VideoName = video.split(".")[0];
+			const videoURL = `${window.location.origin}/watch/${VideoName}/`;
 			await navigator.clipboard.writeText(videoURL);
 			toast.success("Copied to clipboard");
 		} catch (error) {
@@ -79,7 +80,9 @@ function Videos() {
 						<List>
 							{videos.map((video) => (
 								<ListItem ripple={false} className='py-1 pr-1 pl-4' key={video}>
-									<Link to={`/watch/${video}`}>{video}</Link>
+									<Link to={`/watch/${video.split(".")[0]}`}>
+										{video.split(".")[0]}
+									</Link>
 									{deleteLoading ? (
 										<Spinner className='h-4 w-4' />
 									) : (

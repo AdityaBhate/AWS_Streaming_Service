@@ -13,10 +13,13 @@ function Watch() {
 		const fetchVideoLink = async () => {
 			setLoading(true);
 			const response = await axios.get(
-				`https://aws-stream.onrender.com/stream/${id}`
+				`https://aws-stream.onrender.com/stream/${id}.mp4`
 			);
 			setVideoLink(response.data);
-			console.log(response.data);
+			console.log(videoLink);
+			console.log(
+				`https://d1ks1k6yvp3y0e.cloudfront.net/${videoLink?.filename}`
+			);
 			setLoading(false);
 		};
 
@@ -42,7 +45,7 @@ function Watch() {
 							<div className='w-90'>
 								<video controls width='100%' height='auto'>
 									<source
-										src={`https://d1ks1k6yvp3y0e.cloudfront.net/${videoLink.filename}`}
+										src={`https://d1ks1k6yvp3y0e.cloudfront.net/${videoLink?.filename}`}
 										type='video/mp4'
 									/>
 									Your browser does not support the video tag.
