@@ -14,13 +14,10 @@ function Home() {
 					all in one place.
 				</p>
 				<div className='mb-4'>
-					<p className='text-sm text-gray-600'>
-						This project was created by Group 20, a team of talented students:
-					</p>
 					<ul className='text-sm text-gray-600'>
-						<li>sarvesh Shelke</li>
-						<li>Nikhil Singh</li>
-						<li>Sahil More</li>
+						<li>Prasad guru</li>
+						<li>Shobhit vedi</li>
+						<li>Gaurav kolte</li>
 					</ul>
 				</div>
 			</div>
