@@ -15,9 +15,10 @@ function Home() {
 				</p>
 				<div className='mb-4'>
 					<ul className='text-sm text-gray-600'>
-						<li>Prasad guru</li>
-						<li>Shobhit vedi</li>
-						<li>Gaurav kolte</li>
+						<li>Nikhil Singh</li>
+						<li>Shreyash Khedekar</li>
+						<li>Ashok Solanki</li>
+						
 					</ul>
 				</div>
 			</div>
