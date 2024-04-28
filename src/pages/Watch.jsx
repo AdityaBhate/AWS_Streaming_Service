@@ -15,10 +15,11 @@ function Watch() {
 			const response = await axios.get(
 				`https://aws-stream.onrender.com/stream/${id}.mp4`
 			);
+			//https://d1ks1k6yvp3y0e.cloudfront.net/
 			setVideoLink(response.data);
 			console.log(videoLink);
 			console.log(
-				`https://d1ks1k6yvp3y0e.cloudfront.net/${videoLink?.filename}`
+				`https://ddf2adinfvk4e.cloudfront.net/${videoLink?.filename}`
 			);
 			setLoading(false);
 		};
