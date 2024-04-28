@@ -46,7 +46,7 @@ function Watch() {
 							<div className='w-90'>
 								<video controls width='100%' height='auto'>
 									<source
-										src={`https://d1ks1k6yvp3y0e.cloudfront.net/${videoLink?.filename}`}
+										src={`https://ddf2adinfvk4e.cloudfront.net/${videoLink?.filename}`}
 										type='video/mp4'
 									/>
 									Your browser does not support the video tag.
