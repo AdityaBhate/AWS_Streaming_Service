@@ -17,7 +17,7 @@ function Watch() {
 			);
 			//https://d1ks1k6yvp3y0e.cloudfront.net/
 			setVideoLink(response.data);
-			console.log(videoLink);
+			console.log(response.data);
 			console.log(
 				`https://ddf2adinfvk4e.cloudfront.net/${videoLink?.filename}`
 			);
